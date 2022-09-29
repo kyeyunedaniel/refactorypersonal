@@ -10,8 +10,9 @@ const kiswa = document.registration.kiswa
 const itesot = document.registration.itesot
 
 // create a fucntion to check phone number
+///^\d{10}+$/ checks the 10 digits as numbers 
 const checkPhone = () => {
-    let aplhabet = /^\[]+$/
+    let aplhabet = /^\d{10}+$/
 
     // check if empty
     if (telephone.value === "") {
