@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="form"
+        id="signup"
+        name="registration"
+        onsubmit="return false"
+      >
+        <h1>Sign Up</h1>
+        <div class="form-field">
+          <label for="username">Username:</label>
+          <input type="text" name="username" autocomplete="off" id="username" />
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <label for="phone-number">Phone Number:</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            autocomplete="off"
+            id="phone-number"
+            onblur="checkPhone()"
+          />
+          <small></small>
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email" name="email" autocomplete="off" id="email" 
+          onblur="checkEmail()"/>
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <label for="country">Country:</label>
+          <select name="country" id="country">
+            <option value="ug" name="ug">Uganda</option>
+            <option value="ke" name="ke">Kenya</option>
+            <option value="tz" name="tz">Tanzania</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="gender">Gender:</label>
+          <div class="radio">
+            <input
+              type="radio"
+              name="gender"
+              autocomplete="off"
+              id="gender1"
+              value="male"
+              checked
+            />
+            <span>Male</span>
+            <input
+              type="radio"
+              name="gender"
+              autocomplete="off"
+              id="gender2"
+              value="female"
+            />
+            <span>Female</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="languages">Languages:</label>
+          <div class="radio">
+            <input
+              type="checkbox"
+              name="luganda"
+              autocomplete="off"
+              id="languages1"
+              value="luganda"
+            />
+            <span>Luganda</span>
+            <input
+              type="checkbox"
+              name="kiswa"
+              autocomplete="off"
+              id="languages2"
+              value="kiswahili"
+            />
+            <span>Kiswahili</span>
+            <input
+              type="checkbox"
+              name="itesot"
+              autocomplete="off"
+              id="languages2"
+              value="itesot"
+            />
+            <span>Itesot</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <input
+            type="submit"
+            class="btn"
+            id="submit"
+            value="Sign Up"
+            onclick="checkUserName(), checkFirstName(), checkTelephone(), checkPassword()"
+          />
+          <small></small>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./forms2.js"></script>
+</html>
