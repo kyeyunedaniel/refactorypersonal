@@ -12,7 +12,7 @@ const itesot = document.registration.itesot
 // create a fucntion to check phone number
 ///^\d{10}+$/ checks the 10 digits as numbers 
 const checkTelephone = () => {
-    let validadatePhone = /^\d{10}+$/
+    let validadatePhone = /^\d{10}$/
 
     // check if empty
     if (telephone.value === "") {
