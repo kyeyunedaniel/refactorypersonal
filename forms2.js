@@ -11,7 +11,7 @@ const itesot = document.registration.itesot
 
 // create a fucntion to check phone number
 ///^\d{10}+$/ checks the 10 digits as numbers 
-const checkPhone = () => {
+const checkTelephone = () => {
     let validadatePhone = /^\d{10}+$/
 
     // check if empty
@@ -21,7 +21,7 @@ const checkPhone = () => {
     }
 
     // check whether value matches alphabet regex
-    if (telephone.value.match(aplhabet) ) {
+    if (telephone.value.match(validadatePhone) ) {
         // checks if the telephone value has only letters and makes an alert if true
         telephone.style.border = '2px solid red'
         telephone.focus()
@@ -30,27 +30,27 @@ const checkPhone = () => {
     }
 }
 
-const checkEmail = () => {
-    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})*(\.\w{2,3})+$/
+// const checkEmail = () => {
+//     let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})*(\.\w{2,3})+$/
 
- //kyeyunedaniel0@gmail.com
-//daniel.kyeyune@student.ciu.ac.ug
+//  //kyeyunedaniel0@gmail.com
+// //daniel.kyeyune@student.ciu.ac.ug
 
 
-    // check if empty
-    if (email.value === "") {
-        email.style.border = '2px solid red'
-        email.focus()
-    }
+//     // check if empty
+//     if (email.value === "") {
+//         email.style.border = '2px solid red'
+//         email.focus()
+//     }
 
-    // 
-    if (email.value.match(emailRegex)) {
-        country.focus()
-    } else {
-        email.style.border = '2px solid red'
-    }
+//     // 
+//     if (email.value.match(emailRegex)) {
+//         country.focus()
+//     } else {
+//         email.style.border = '2px solid red'
+//     }
 
-}
+// }
 
 //  let numbers = /^[0-9]+$/
 // let alphanumeric = /^[0-9a-zA-Z]+$/
