@@ -11,7 +11,7 @@ const itesot = document.registration.itesot
 
 // create a fucntion to check phone number
 const checkPhone = () => {
-    let aplhabet = /^[A-Za-z]+$/
+    let aplhabet = /^\[]+$/
 
     // check if empty
     if (telephone.value === "") {
@@ -29,7 +29,7 @@ const checkPhone = () => {
     }
 }
 
-const datex = () => {
+const checkEmail = () => {
     let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})*(\.\w{2,3})+$/
 
  //kyeyunedaniel0@gmail.com
